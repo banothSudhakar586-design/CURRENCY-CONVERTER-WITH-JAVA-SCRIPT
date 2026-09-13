@@ -51,7 +51,6 @@ const updateExchangeRate = async () =>{
 
     const msgs = document.querySelector(".msg");
     msgs.innerText = `${amtval} ${fromCurr.value} =${finalAmount} ${toCurr.value}`;
-
 }
 
 
@@ -62,8 +61,8 @@ const updateFlage =(element)=>{
 
     let img =element.parentElement.querySelector("img");
     img.src=newSrc;
-
 }
+
 
 btn.addEventListener("click" ,async (evt) =>{
     evt.preventDefault();
@@ -91,17 +90,7 @@ ExchangeCountry.addEventListener("click", ()=>{
     updateFlage(toCurr);
 
     updateExchangeRate();
-
-
 })
-
-
-
-
-//Took AI help
-
-
-
 
 
 // Live Currency Label Update
